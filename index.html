@@ -6,23 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 0.2em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #38bdf8;
     }
     p {
-      font-size: 1.2em;
+      line-height: 1.6;
       color: #94a3b8;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
     a {
       color: #38bdf8;
@@ -31,11 +41,39 @@
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <h1>Kaminolabs</h1>
-    <p>Making complex systems visible and controllable.</p>
+    <p><strong>Making complex systems visible and controllable.</strong></p>
+
+    <h2>What we do</h2>
     <p>
-      <a href="https://github.com/your-repo">View Projects</a>
+      Kaminolabs builds practical tools that simplify the operation of complex enterprise systems.
+      Focused on real-world challenges in core banking and infrastructure environments.
+    </p>
+
+    <div class="card">
+      <h2>Transact COB Dashboard</h2>
+      <p>
+        A lightweight operational dashboard designed to monitor and control
+        the COB (Close of Business) process in Temenos Transact environments.
+      </p>
+      <p>
+        Provides real-time visibility into system status, batch progress,
+        and operational metrics — all in one place.
+      </p>
+      <p>
+        <a href="#">View Project →</a>
+      </p>
+    </div>
+
+    <h2>More coming soon</h2>
+    <p>
+      Additional tools and utilities are being developed to improve operational
+      visibility, automation, and control across banking platforms.
+    </p>
+
+    <p style="margin-top:40px;">
+      © Kaminolabs
     </p>
   </div>
 </body>
